@@ -383,10 +383,10 @@ Your Eurocircuits Team
 </signal>
 <signal name="IN_2">
 </signal>
-<signal name="SCL">
+<signal name="RESET">
 <contactref element="J1" pad="1"/>
 </signal>
-<signal name="SDA">
+<signal name="D+">
 <contactref element="J1" pad="3"/>
 </signal>
 <signal name="V1">
@@ -400,7 +400,7 @@ Your Eurocircuits Team
 <contactref element="J1" pad="4"/>
 <wire x1="19" y1="40" x2="29" y2="40" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="RESET">
+<signal name="D-">
 <contactref element="J1" pad="2"/>
 </signal>
 <signal name="V2">

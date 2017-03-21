@@ -348,14 +348,14 @@ Author: Stefano Speretta
 <busses>
 </busses>
 <nets>
-<net name="SCL" class="0">
+<net name="RESET" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <label x="33.02" y="142.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="D+" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="12.7" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
@@ -388,7 +388,7 @@ Author: Stefano Speretta
 <junction x="15.24" y="121.92"/>
 </segment>
 </net>
-<net name="RESET" class="0">
+<net name="D-" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="139.7" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
