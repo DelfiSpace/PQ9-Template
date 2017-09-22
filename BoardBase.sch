@@ -57,8 +57,15 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="13" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -69,16 +76,98 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="fp3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="130bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
 <library name="Delfi-PQ">
 <packages>
-<package name="MOUNTING-HOLE">
-<description>Mounting hole footprint used for a Delfi-PQ board</description>
+<package name="PQ-MOUNTING-HOLE">
+<description>Mounting hole footprint used for a Delfi-PQ board.
+I2.5 = Drill dimater 2.5mm
+O5 = Overall diameter 5mm</description>
 <pad name="H" x="0" y="0" drill="2.5" diameter="5" thermals="no"/>
 <circle x="0" y="0" radius="3" width="0" layer="39"/>
+<circle x="0" y="0" radius="3" width="0" layer="42"/>
 <circle x="0" y="0" radius="3" width="0" layer="40"/>
+<circle x="0" y="0" radius="3" width="0" layer="43"/>
+<circle x="0" y="0" radius="3" width="0" layer="41"/>
 </package>
 <package name="SQT-109">
 <description>9 PINS 2MM SINGLE ROW SOCKET STRIP ASSEMBLY.</description>
@@ -109,43 +198,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="SQT-105-XX-XXX-D">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
-<text x="5.08" y="3.302" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.08" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="0" length="middle"/>
-<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="3" x="0" y="-2.54" length="middle"/>
-<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="5" x="0" y="-5.08" length="middle"/>
-<pin name="6" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="7" x="0" y="-7.62" length="middle"/>
-<pin name="8" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="9" x="0" y="-10.16" length="middle"/>
-<pin name="10" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="11" x="0" y="-12.7" length="middle"/>
-<pin name="12" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<wire x1="5.08" y1="-35.56" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<pin name="13" x="0" y="-15.24" length="middle"/>
-<pin name="14" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="15" x="0" y="-17.78" length="middle"/>
-<wire x1="15.24" y1="2.54" x2="15.24" y2="-35.56" width="0.254" layer="94"/>
-<pin name="16" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="17" x="0" y="-20.32" length="middle"/>
-<pin name="18" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="19" x="0" y="-22.86" length="middle"/>
-<pin name="20" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<wire x1="5.08" y1="-35.56" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<pin name="21" x="0" y="-25.4" length="middle"/>
-<pin name="22" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="23" x="0" y="-27.94" length="middle"/>
-<pin name="24" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="25" x="0" y="-30.48" length="middle"/>
-<pin name="26" x="20.32" y="-30.48" length="middle" rot="R180"/>
-<pin name="27" x="0" y="-33.02" length="middle"/>
-<pin name="28" x="20.32" y="-33.02" length="middle" rot="R180"/>
-</symbol>
 <symbol name="MOUNTING-HOLE">
 <description>Mounting hole symbol used for a Delfi-PQ board</description>
 <wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
@@ -157,33 +209,54 @@
 <text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="SQT-109">
-<description>9 PINS 2MM SINGLE ROW SOCKET STRIP ASSEMBLY.</description>
-<wire x1="-5.08" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
-<wire x1="2.54" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<pin name="1" x="7.62" y="10.16" length="middle" rot="R180"/>
-<pin name="2" x="7.62" y="7.62" length="middle" rot="R180"/>
-<pin name="3" x="7.62" y="5.08" length="middle" rot="R180"/>
-<pin name="4" x="7.62" y="2.54" length="middle" rot="R180"/>
-<pin name="5" x="7.62" y="0" length="middle" rot="R180"/>
-<pin name="6" x="7.62" y="-2.54" length="middle" rot="R180"/>
-<pin name="7" x="7.62" y="-5.08" length="middle" rot="R180"/>
-<pin name="8" x="7.62" y="-7.62" length="middle" rot="R180"/>
-<pin name="9" x="7.62" y="-10.16" length="middle" rot="R180"/>
-<text x="-5.08" y="15.24" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<symbol name="CON9">
+<wire x1="2.54" y1="11.43" x2="-2.54" y2="11.43" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-11.43" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="11.43" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-11.43" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="2.54" y1="11.43" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-0.635" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-0.635" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-0.635" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="10.16" x2="0.635" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="7.62" x2="0.635" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="5.08" x2="0.635" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<text x="-1.905" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-14.2875" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="10.16" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-5.08" y="7.62" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="6" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+<wire x1="-2.54" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="7" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas"/>
+<pin name="8" x="-5.08" y="-7.62" visible="pad" length="short" direction="pas"/>
+<pin name="9" x="-5.08" y="-10.16" visible="pad" length="short" direction="pas"/>
+<wire x1="-2.54" y1="-5.08" x2="-0.635" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-0.635" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-0.635" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-7.62" x2="0.635" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-5.08" x2="0.635" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-10.16" x2="0.635" y2="-10.16" width="0.4064" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOUNTING-HOLE" prefix="H">
+<deviceset name="PQ-MOUNTING-HOLE" prefix="H">
 <description>Mounting hole device used for a Delfi-PQ board</description>
 <gates>
 <gate name="G$1" symbol="MOUNTING-HOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOUNTING-HOLE">
+<device name="" package="PQ-MOUNTING-HOLE">
 <technologies>
 <technology name="">
 <attribute name="HEIGHT" value="-1" constant="no"/>
@@ -192,13 +265,13 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SQT-109" prefix="J">
+<deviceset name="CON9" prefix="J">
 <description>9 PINS 2MM SINGLE ROW SOCKET STRIP ASSEMBLY.</description>
 <gates>
-<gate name="G$1" symbol="SQT-109" x="0" y="0"/>
+<gate name="G$1" symbol="CON9" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SQT-109">
+<device name="_SQT-109" package="SQT-109">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -310,12 +383,12 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="J1" library="Delfi-PQ" deviceset="SQT-109" device=""/>
+<part name="J1" library="Delfi-PQ" deviceset="CON9" device="_SQT-109"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="TOP frame"/>
-<part name="H1" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device=""/>
-<part name="H2" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device=""/>
-<part name="H3" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device=""/>
-<part name="H4" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device=""/>
+<part name="H1" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
+<part name="H2" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
+<part name="H3" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
+<part name="H4" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -337,7 +410,7 @@ Author: Stefano Speretta
               &lt;s.speretta@tudelft.nl&gt;</text>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="5.08" y="132.08"/>
+<instance part="J1" gate="G$1" x="5.08" y="132.08" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="-15.24" y="-12.7"/>
 <instance part="H1" gate="G$1" x="5.08" y="99.06"/>
 <instance part="H2" gate="G$1" x="5.08" y="91.44"/>
@@ -351,28 +424,28 @@ Author: Stefano Speretta
 <net name="RESET" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <label x="33.02" y="142.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="12.7" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
 <label x="33.02" y="137.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="12.7" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <label x="33.02" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V3" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="12.7" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
 <label x="33.02" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
@@ -381,31 +454,31 @@ Author: Stefano Speretta
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="15.24" y1="119.38" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="9"/>
-<wire x1="12.7" y1="121.92" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="121.92" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="121.92" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="15.24" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 <junction x="15.24" y="121.92"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="139.7" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="139.7" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
 <label x="17.78" y="139.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V2" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="12.7" y1="129.54" x2="17.78" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="129.54" x2="17.78" y2="129.54" width="0.1524" layer="91"/>
 <label x="17.78" y="129.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V4" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="12.7" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
 <label x="17.78" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
