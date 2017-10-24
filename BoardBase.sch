@@ -90,6 +90,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Al_Dimension" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="Countersink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -158,16 +160,13 @@
 <libraries>
 <library name="Delfi-PQ">
 <packages>
-<package name="PQ-MOUNTING-HOLE">
-<description>Mounting hole footprint used for a Delfi-PQ board.
+<package name="MOUNTING-HOLE-PQ">
+<description>Mounting hole footprint used for a Delfi-PQ board.&lt;p&gt; This is a dedicated mounting hole PQ Subsystems &lt;p&gt;
 I2.5 = Drill dimater 2.5mm
 O5 = Overall diameter 5mm</description>
 <pad name="H" x="0" y="0" drill="2.5" diameter="5" thermals="no"/>
 <circle x="0" y="0" radius="3" width="0" layer="39"/>
-<circle x="0" y="0" radius="3" width="0" layer="42"/>
 <circle x="0" y="0" radius="3" width="0" layer="40"/>
-<circle x="0" y="0" radius="3" width="0" layer="43"/>
-<circle x="0" y="0" radius="3" width="0" layer="41"/>
 </package>
 <package name="SQT-109">
 <description>9 PINS 2MM SINGLE ROW SOCKET STRIP ASSEMBLY.</description>
@@ -195,6 +194,30 @@ O5 = Overall diameter 5mm</description>
 <vertex x="-6.9994875" y="-2.46985625"/>
 </polygon>
 <wire x1="9.65" y1="-1.5" x2="9.65" y2="1.5" width="0.127" layer="21"/>
+</package>
+<package name="MOUNTING-HOLE-I2.5-O5">
+<description>Mounting hole footprint used for a Delfi-PQ board.
+I2.5 = Drill dimater 2.5mm
+O5 = Overall diameter 5mm</description>
+<pad name="H" x="0" y="0" drill="2.5" diameter="5" thermals="no"/>
+<circle x="0" y="0" radius="3" width="0" layer="39"/>
+<circle x="0" y="0" radius="3" width="0" layer="40"/>
+</package>
+<package name="MOUNTING-HOLE-I2-O4">
+<description>Mounting hole footprint used for a Delfi-PQ board.
+I2 = Drill dimater 2mm
+O4 = Overall diameter 4mm</description>
+<pad name="H" x="0" y="0" drill="2" diameter="4" thermals="no"/>
+<circle x="0" y="0" radius="2.5" width="0" layer="39"/>
+<circle x="0" y="0" radius="2.5" width="0" layer="40"/>
+</package>
+<package name="MOUNTING-HOLE-I3-O6">
+<description>Mounting hole footprint used for a Delfi-PQ board.
+I3 = Drill dimater 3mm
+O6 = Overall diameter 6mm</description>
+<pad name="H" x="0" y="0" drill="3" diameter="6" thermals="no"/>
+<circle x="0" y="0" radius="3" width="0" layer="39"/>
+<circle x="0" y="0" radius="3" width="0" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -250,16 +273,35 @@ O5 = Overall diameter 5mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PQ-MOUNTING-HOLE" prefix="H">
-<description>Mounting hole device used for a Delfi-PQ board</description>
+<deviceset name="MOUNTING-HOLE" prefix="H">
+<description>Mounting hole device</description>
 <gates>
 <gate name="G$1" symbol="MOUNTING-HOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PQ-MOUNTING-HOLE">
+<device name="2.5-5" package="MOUNTING-HOLE-I2.5-O5">
 <technologies>
 <technology name="">
 <attribute name="HEIGHT" value="-1" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2-4" package="MOUNTING-HOLE-I2-O4">
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="4.0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3-6" package="MOUNTING-HOLE-I3-O6">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_PQ" package="MOUNTING-HOLE-PQ">
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="7.0" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -284,7 +326,9 @@ O5 = Overall diameter 5mm</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="7.0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -385,18 +429,18 @@ DIN A4, landscape with location and doc. field</description>
 <parts>
 <part name="J1" library="Delfi-PQ" deviceset="CON9" device="_SQT-109"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="TOP frame"/>
-<part name="H1" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
-<part name="H2" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
-<part name="H3" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
-<part name="H4" library="Delfi-PQ" deviceset="PQ-MOUNTING-HOLE" device=""/>
+<part name="H1" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device="_PQ"/>
+<part name="H2" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device="_PQ"/>
+<part name="H3" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device="_PQ"/>
+<part name="H4" library="Delfi-PQ" deviceset="MOUNTING-HOLE" device="_PQ"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="-2.54" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="33.02" y1="104.14" x2="33.02" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="33.02" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="-2.54" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="35.56" y1="104.14" x2="35.56" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="35.56" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-2.54" y1="71.12" x2="-2.54" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
 <text x="7.62" y="68.58" size="1.778" layer="97">Mounting Holes</text>
 <wire x1="-2.54" y1="154.94" x2="48.26" y2="154.94" width="0.1524" layer="97" style="shortdash"/>
